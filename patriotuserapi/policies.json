@@ -1,0 +1,2 @@
+{"source":"Door cam","sourceType":"ipcamera","attribute":"Camera frame","destination":"Guest's phone","destinationType":"userphone","timeFrom":"any","timeTill":"any","id":"f7f1c7ba76491dc478ba61c96f8ab882"},
+{"source":"Bedroom cam","sourceType":"ipcamera","attribute":"Any","destination":"Internet","destinationType":"httprequest","timeFrom":"any","timeTill":"any","id":"43740de84e4f5767e1a3caeb39b84e6e"},

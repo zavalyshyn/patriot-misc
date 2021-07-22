@@ -1,0 +1,195 @@
+{
+  "motionsensor": {
+    "name": "motionsensor",
+    "device": true,
+    "deviceactions": [],
+    "attributes": [
+      "motion_detected"
+    ],
+    "attrtype": "attrtype(motion_detected,boolean).",
+    "portdatatype": "portdatatype([],[boolean],motiondetectedport,motionsensor).",
+    "stopport": "",
+    "output": "output(X,motiondetectedport,Attr,Value,Trans,Time) :-\n\tei(X,motionsensor),\n\tAttr = [motion_detected],\n\tValue=[true],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,motiondetectedport,Attr,Value,Trans,Time) :-\n\tei(X,motionsensor),\n\tAttr = [motion_detected],\n\tValue=[false],\n\tTrans = [],\n\tTime is 0.",
+    "helpers": ""
+  },
+  "contactsensor": {
+    "name": "contactsensor",
+    "device": true,
+    "deviceactions": [],
+    "attributes": [
+      "contact_open",
+      "contact_closed"
+    ],
+    "attrtype": "attrtype(contact_open,boolean).\nattrtype(contact_closed,boolean).",
+    "portdatatype": "portdatatype([],[boolean],contactclosedport,contactsensor).\nportdatatype([],[boolean],contactopenport,contactsensor).",
+    "stopport": "",
+    "output": "output(X,contactopenport,Attr,Value,Trans,Time) :-\n\tei(X,contactsensor),\n\tAttr = [contact_open],\n\tValue=[true],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,contactopenport,Attr,Value,Trans,Time) :-\n\tei(X,contactsensor),\n\tAttr = [contact_open],\n\tValue=[false],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,contactclosedport,Attr,Value,Trans,Time) :-\n\tei(X,contactsensor),\n\tAttr = [contact_closed],\n\tValue=[true],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,contactclosedport,Attr,Value,Trans,Time) :-\n\tei(X,contactsensor),\n\tAttr = [contact_closed],\n\tValue=[false],\n\tTrans = [],\n\tTime is 0.",
+    "helpers": ""
+  },
+  "wakeworddetection": {
+    "name": "wakeworddetection",
+    "device": false,
+    "deviceactions": [],
+    "attributes": [
+      "voice_command"
+    ],
+    "attrtype": "attrtype(voice_command,audio).",
+    "portdatatype": "portdatatype([],[audio],audioport,wakeworddetection).",
+    "stopport": "",
+    "output": "output(X,audioport,Attr,Value,Trans,Time) :-\n\tei(X,wakeworddetection),\n\tAttr = [voice_command],\n\tValue = [audiorecording],\n\tTrans = [],\n\tTime = 0.",
+    "helpers": ""
+  },
+  "smartlight": {
+    "name": "smartlight",
+    "device": true,
+    "deviceactions": [
+      "turnofflightport",
+      "turnonlightport"
+    ],
+    "attributes": [
+      "light_state"
+    ],
+    "attrtype": "attrtype(light_state,boolean).",
+    "portdatatype": "portdatatype([boolean],[],turnonlightport,smartlight).\nportdatatype([boolean],[],turnofflightport,smartlight).\nportdatatype([],[boolean],getlightstateport,smartlight).",
+    "stopport": "stopport(turnonlightport,smartlight).\nstopport(turnofflightport,smartlight).",
+    "output": "output(X,getlightstateport,Attr,Value,Trans,Time) :-\n\tei(X,smartlight),\n\tAttr = [light_state],\n\tValue = [true],\n\tTrans = [],\n\tTime = 0.\n\noutput(X,getlightstateport,Attr,Value,Trans,Time) :-\n\tei(X,smartlight),\n\tAttr = [light_state],\n\tValue = [false],\n\tTrans = [],\n\tTime = 0.",
+    "helpers": ""
+  },
+  "or": {
+    "name": "or",
+    "device": false,
+    "deviceactions": [],
+    "attributes": [],
+    "attrtype": "",
+    "portdatatype": "portdatatype([boolean],[],orin1port,or).\nportdatatype([boolean],[],orin2port,or).\nportdatatype([],[boolean],oroutport,or).",
+    "stopport": "",
+    "output": "output(X,oroutport,Attr,Value,Trans,Time) :-\n\tei(X,or),\n\tinput(X,orin1port,Attr,ValueIn,Trans,TimeIn),\n\tmember(true,ValueIn),\n\tValue = [true],\n\tTime is TimeIn.\n\noutput(X,oroutport,Attr,Value,Trans,Time) :-\n\tei(X,or),\n\tinput(X,orin2port,Attr,ValueIn,Trans,TimeIn),\n\tmember(true,ValueIn),\n\tValue = [true],\n\tTime is TimeIn.\n\n%output(X,oroutport,Attr,Value,Trans,Time) :-\n%\tei(X,or),\n%\tinput(X,orin1port,Attr1,ValueIn1,Trans1,TimeIn1),\n%\tmember(false,ValueIn1),\n%\tinput(X,orin2port,Attr2,ValueIn2,Trans2,TimeIn2),\n%\tmember(false,ValueIn2),\n%\tValue = [false],\n%\tAttr = [Attr1,Attr2],\n%\tTrans = [Trans1,Trans2],\n%\tTime is max(TimeIn1,TimeIn2).",
+    "helpers": ""
+  },
+  "pushnotifier": {
+    "name": "pushnotifier",
+    "device": true,
+    "deviceactions": [],
+    "attributes": [
+      "dismiss_received"
+    ],
+    "attrtype": "attrtype(dismiss_received,boolean).",
+    "portdatatype": "portdatatype([text,image],[],sendpushwithimageport,pushnotifier).\nportdatatype([text],[],sendpushmessageport,pushnotifier).\nportdatatype([],[boolean],dismissreceivedport,pushnotifier).",
+    "stopport": "stopport(sendpushwithimageport,pushnotifier).\nstopport(sendpushmessageport,pushnotifier).",
+    "output": "output(X,dismissreceivedport,Attr,Value,Trans,Time) :-\n\tei(X,pushnotifier),\n\tAttr = [dismiss_received],\n\tValue = [true],\n\tTrans = [],\n\tTime is 0.",
+    "helpers": ""
+  },
+  "ipcamera": {
+    "name": "ipcamera",
+    "device": true,
+    "deviceactions": [],
+    "attributes": [
+      "camera_frame"
+    ],
+    "attrtype": "attrtype(camera_frame,image).",
+    "portdatatype": "portdatatype([],[image],getframeport,ipcamera).\nportdatatype([],[image],cameraframeport,ipcamera).",
+    "stopport": "",
+    "output": "output(X,cameraframeport,Attr,Value,Trans,Time) :-\n\tei(X,ipcamera),\n\tAttr = [camera_frame],\n\tValue = [cameraframe],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,getframeport,Attr,Value,Trans,Time) :-\n\tei(X,ipcamera),\n\tAttr = [camera_frame],\n\tValue = [cameraframe],\n\tTrans = [],\n\tTime is 0.",
+    "helpers": ""
+  },
+  "timer": {
+    "name": "timer",
+    "device": false,
+    "deviceactions": [],
+    "attributes": [
+      "timer_expired"
+    ],
+    "attrtype": "attrtype(timer_expired,boolean).",
+    "portdatatype": "portdatatype([boolean],[],starttimerport,timer).\nportdatatype([boolean],[],starttimeronceport,timer).\nportdatatype([boolean],[],stoptimerport,timer).\nportdatatype([],[boolean],timerexpiredport,timer).",
+    "stopport": "stopport(stoptimerport,timer).",
+    "output": "output(X,timerexpiredport,Attr,Value,Trans,Time) :-\n\tei(X,timer),\n\tconfig(Timeout,time,timer),\n\tinput(X,settimerport,_,_,Trans,TimeIn),\n\tAttr = [timer_expired],\n\tValue = [true],\n\tTime is TimeIn + Timeout.\n\noutput(X,timerexpiredport,Attr,Value,Trans,Time) :-\n\tei(X,timer),\n\tconfig(Timeout,time,timer),\n\tinput(X,starttimerport,_,_,Trans,TimeIn),\n\tAttr = [timer_expired],\n\tValue = [true],\n\tTime is TimeIn + Timeout.\n\noutput(X,timerexpiredport,Attr,Value,Trans,Time) :-\n\tei(X,timer),\n\tconfig(Timeout,time,timer),\n\tinput(X,starttimeronceport,_,_,Trans,TimeIn),\n\tAttr = [timer_expired],\n\tValue = [true],\n\tTime is TimeIn + Timeout.",
+    "helpers": ""
+  },
+  "tap": {
+    "name": "tap",
+    "device": false,
+    "deviceactions": [],
+    "attributes": [
+      "tap_state"
+    ],
+    "attrtype": "attrtype(tap_state,boolean).",
+    "portdatatype": "portdatatype([boolean],[],tapconditionport,tap).\nportdatatype(any,any,tapinport,tap). % can be duplex\nportdatatype(any,any,tapoutport,tap).% can be duplex",
+    "stopport": "stopport(tapconditionport,tap).",
+    "output": "output(X,tapoutport,Attr,Value,Trans,Time) :-\n\tei(X,tap),\n\tinput(X,tapconditionport,_,ValueCond,_,TimeInCond),\n\tmember(true,ValueCond),\n\tinput(X,tapinport,Attr,Value,Trans,TimeIn),\n\tTime is max(TimeIn,TimeInCond).\n\noutput(X,tapinport,Attr,Value,Trans,Time) :-\n\tei(X,tap),\n\tinput(X,tapconditionport,_,ValueCond,_,_),\n\tmember(true,ValueCond),\n\tinput(X,tapoutport,Attr,Value,Trans,Time).\n\noutput(X,gettapstateport,Attr,Value,Trans,Time) :-\n\tei(X,tap),\n\tAttr = [tap_state],\n\tValue = [true],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,gettapstateport,Attr,Value,Trans,Time) :-\n\tei(X,tap),\n\tAttr = [tap_state],\n\tValue = [false],\n\tTrans = [],\n\tTime is 0.",
+    "helpers": ""
+  },
+  "not": {
+    "name": "not",
+    "device": false,
+    "deviceactions": [],
+    "attributes": [],
+    "attrtype": "",
+    "portdatatype": "portdatatype([boolean],[],notinport,not).\nportdatatype([],[boolean],notoutport,not).",
+    "stopport": "",
+    "output": "output(X,notoutport,Attr,Value,Trans,Time) :-\n\tei(X,not),\n\tinput(X,notinport,Attr,ValueIn,Trans,TimeIn),\n\tTime is TimeIn,\n\t% A -> X ; Y means if A is true then X otherwise Y\n\t(member(true,ValueIn) -> Value = [false] ; Value = [true]).",
+    "helpers": ""
+  },
+  "httprequest": {
+    "name": "httprequest",
+    "device": true,
+    "deviceactions": [],
+    "attributes": [
+      "data_from_internet"
+    ],
+    "attrtype": "attrtype(data_from_internet,externaldata).",
+    "portdatatype": "portdatatype(any,any,httppostport,httprequest).\nportdatatype(any,any,httpgetport,httprequest).\nportdatatype(any,any,httpputport,httprequest).\nportdatatype(any,any,httpdeleteport,httprequest).",
+    "stopport": "",
+    "output": "output(X,httpgetport,Attr,Value,Trans,Time) :-\n\tei(X,httprequest),\n\tAttr = [data_from_internet],\n\tValue = [],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,httppostport,Attr,Value,Trans,Time) :-\n\tei(X,httprequest),\n\tAttr = [data_from_internet],\n\tValue = [],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,httpputport,Attr,Value,Trans,Time) :-\n\tei(X,httprequest),\n\tAttr = [data_from_internet],\n\tValue = [],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,httpdeleteport,Attr,Value,Trans,Time) :-\n\tei(X,httprequest),\n\tAttr = [data_from_internet],\n\tValue = [],\n\tTrans = [],\n\tTime is 0.",
+    "helpers": ""
+  },
+  "aesencryption": {
+    "name": "aesencryption",
+    "device": false,
+    "deviceactions": [],
+    "attributes": [
+      "encrypted_data"
+    ],
+    "attrtype": "attrtype(encrypted_data,encrypteddata).",
+    "portdatatype": "portdatatype(any,[],encryptdatainport,aesencryption).\nportdatatype([],[encrypteddata],encryptdataoutport,aesencryption).",
+    "stopport": "",
+    "output": "output(X,encryptdataoutport,Attr,Value,Trans,Time) :-\n\tei(X,aesencryption),\n\tinput(X,encryptdatainport,AttrIn,_,TransIn,Time),\n\taddencryptedprefix(AttrIn,TransOut),\n\tAttr = [encrypted_data],\n\tValue = [],\n\t%append(TransIn, [t(H, encrypted, X)], Trans),  % nuno's ver.\n\tappend(TransIn, TransOut, Trans).",
+    "helpers": "% Helper rules for the aesencryption element\n\naddencryptedprefix([],[]).\n\naddencryptedprefix([H|T],[NewAttr|Rest]) :-\n\tatom_concat('encrypted_',H,NewAttr),\n\taddencryptedprefix(T,Rest)."
+  },
+  "timecontroller": {
+    "name": "timecontroller",
+    "device": false,
+    "deviceactions": [],
+    "attributes": [
+      "time_control_signal"
+    ],
+    "attrtype": "attrtype(time_control_signal,boolean).",
+    "portdatatype": "portdatatype([],[boolean],controlsignalport,timecontroller).",
+    "stopport": "stopport(controlsignalport,timecontroller).",
+    "output": "% true signal is only sent when the time is right\noutput(X,controlsignalport,Attr,Value,Trans,Time) :-\n\tei(X,timecontroller),\n\t%config(StartH,starthour,timecontroller),\n\t%config(StartM,startminute,timecontroller),\n\t%config(EndH,endhour,timecontroller),\n\t%config(EndM,endminute,timecontroller),\n\t%timeok(StartH,StartM,EndH,EndM),\n\tAttr = [time_control_signal],\n\tValue = [true],\n\tTrans = [],\n\tTime is 0.\n\n% false signal is sent otherwise\noutput(X,controlsignalport,Attr,Value,Trans,Time) :-\n\tei(X,timecontroller),\n\t%config(StartH,starthour,timecontroller),\n\t%config(StartM,startminute,timecontroller),\n\t%config(EndH,endhour,timecontroller),\n\t%config(EndM,endminute,timecontroller),\n\t%not(timeok(StartH,StartM,EndH,EndM)),\n\tAttr = [time_control_signal],\n\tValue = [false],\n\tTrans = [],\n\tTime is 0.",
+    "helpers": ""
+  },
+  "alarm": {
+    "name": "alarm",
+    "device": true,
+    "deviceactions": [
+      "triggeralarmport"
+    ],
+    "attributes": [],
+    "attrtype": "",
+    "portdatatype": "portdatatype([],[],triggeralarmport,alarm).",
+    "stopport": "stopport(triggeralarmport,alarm).",
+    "output": "",
+    "helpers": ""
+  },
+  "untrusted": {
+    "name": "untrusted",
+    "device": false,
+    "deviceactions": [],
+    "attributes": [],
+    "attrtype": "",
+    "portdatatype": "portdatatype(any,any,_,untrusted).",
+    "stopport": "",
+    "output": "output(X,_,Attr,Value,Trans,Time):-\n\tei(X,untrusted),\n\tuntrusted(X),\n\tallattr(X,Attr),\n\tallvalues(X,Value),\n\talltransforms(X,Trans),\n\talltimes(X,Time).",
+    "helpers": "% Helper rules for the untrusted element\nallattr(ElInstance, Result) :-\n\tfindall(Attr, input(ElInstance,_,Attr,_,_,_),L),\n\tappend(L, W),\n\tsort(W,Result).\n\nallvalues(ElInstance, Result) :-\n\tfindall(Value, input(ElInstance,_,_,Value,_,_),L),\n\tappend(L, W),\n\tsort(W,Result).\n\nalltransforms(ElInstance, Result) :-\n\tfindall(Trans, input(ElInstance,_,_,_,Trans,_),L),\n\tappend(L, W),\n\tsort(W,Result).\n\nalltimes(ElInstance, Final) :-\n\tfindall(Time, input(ElInstance,_,_,_,_,Time),Times),\n\tfindmax(Times,Final).\n\n\naccMax([H|T],Acc,Max) :-\n\tH > Acc,\n\taccMax(T,H,Max).\n\naccMax([H|T],Acc,Max) :-\n\tH =< Acc,\n\taccMax(T,Acc,Max).\n\naccMax([],Acc,Acc).\n\nfindmax(List,Max) :-\n\tList = [H|_],\n\taccMax(List,H,Max)."
+  }
+}

@@ -1,0 +1,304 @@
+[
+  {
+    "id": 1,
+    "name": "BabyMonitor",
+    "description": "An app sends push message with an image from a baby cam to a selected user phone when it detects movement. Active from 8AM till 5PM",
+    "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3Mi44MDkiIGhlaWdodD0iNzIuODIzIiB2aWV3Qm94PSIwIDAgNzIuODA5IDcyLjgyMyI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6IzAwYTU1MTt9PC9zdHlsZT48L2RlZnM+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzIuODU1IDcyLjgyMykgcm90YXRlKDE4MCkiPjxwYXRoIGNsYXNzPSJhIiBkPSJNMjEyLjMxMSwzODIuNjQ2YTExLjk3MSwxMS45NzEsMCwwLDAsNC4yLS43NjIsMS4yMTMsMS4yMTMsMCwwLDAtLjg0OS0yLjI3Myw5LjUyNCw5LjUyNCwwLDAsMS02LjcsMCwxLjIxNCwxLjIxNCwwLDAsMC0uODUsMi4yNzNBMTEuOTc0LDExLjk3NCwwLDAsMCwyMTIuMzExLDM4Mi42NDZabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE3NS44NiAtMzIxLjk3MikiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTE4NC4zNDEsNDEyLjk0NmExLjIxMiwxLjIxMiwwLDAsMCwuNTE5LDEuNjM3LDE2Ljk4NywxNi45ODcsMCwwLDAsMTUuNjI5LDAsMS4yMTMsMS4yMTMsMCwxLDAtMS4xMTYtMi4xNTUsMTQuNTYxLDE0LjU2MSwwLDAsMS0xMy40LDBBMS4yMTMsMS4yMTMsMCwwLDAsMTg0LjM0MSw0MTIuOTQ2Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNTYuMjI0IC0zNDkuNzUzKSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTgzLjg1NSw0NDQuNTNhMTkuMjgzLDE5LjI4MywwLDAsMS0yMC4wNzMsMCwxLjIxMywxLjIxMywwLDAsMC0xLjI1OSwyLjA3MywyMS43MTIsMjEuNzEyLDAsMCwwLDIyLjU5MiwwLDEuMjE0LDEuMjE0LDAsMSwwLTEuMjYtMi4wNzZabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzNy4zNjggLTM3Ni45NDkpIi8+PHBhdGggZD0iTTcxLjY0MiwwSDEuMjZBMS4yMTQsMS4yMTQsMCwwLDAsLjA0NywxLjIxM1YxMi4xMzVBNC44NTQsNC44NTQsMCwwLDAsNC45LDE2Ljk4OXY2LjA2N2EzMS41NSwzMS41NSwwLDAsMCw2My4xLDBWMTYuOTg5YTQuODU0LDQuODU0LDAsMCwwLDQuODU0LTQuODU0VjEuMjEzQTEuMjE0LDEuMjE0LDAsMCwwLDcxLjY0MiwwWk02NS41NzUsMjMuMDU2YTI5LjEyMywyOS4xMjMsMCwxLDEtNTguMjQ3LDBWMTYuOTg5SDY1LjU3NVptNC44NTQtMTAuOTIxQTIuNDI3LDIuNDI3LDAsMCwxLDY4LDE0LjU2Mkg0LjlhMi40MjcsMi40MjcsMCwwLDEtMi40MjctMi40MjdWOS43MDhINzAuNDI5Wm0wLTQuODU0SDIuNDc0VjIuNDI3SDcwLjQyOVptMCwwIi8+PHBhdGggZD0iTTE3OC45NjgsMTk3Ljg0M2ExMC45MjEsMTAuOTIxLDAsMSwwLTEwLjkyMS0xMC45MjFBMTAuOTIxLDEwLjkyMSwwLDAsMCwxNzguOTY4LDE5Ny44NDNabTAtMTkuNDE2YTguNDk0LDguNDk0LDAsMSwxLTguNDk0LDguNDk0QTguNDk0LDguNDk0LDAsMCwxLDE3OC45NjgsMTc4LjQyN1ptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTQyLjUxNyAtMTQ5LjMwNCkiLz48cGF0aCBkPSJNMjA2LjExNCwyMjAuMTM1YTYuMDY3LDYuMDY3LDAsMSwwLTYuMDY3LTYuMDY3QTYuMDY3LDYuMDY3LDAsMCwwLDIwNi4xMTQsMjIwLjEzNVptMC05LjcwOGEzLjY0LDMuNjQsMCwxLDEtMy42NCwzLjY0QTMuNjQsMy42NCwwLDAsMSwyMDYuMTE0LDIxMC40MjdabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2OS42NjMgLTE3Ni40NSkiLz48L2c+PC9zdmc+",
+    "privacy concern": "The application has access to camera (unlimited) and network. The user wants to be sure that the camera is inactive when he is at home",
+    "devices": ["IPCamera"],
+    "notifications": ["PushNotifier"],
+    "internetAccess": {
+      "access": false,
+      "url": ""
+    },
+    "flows": [{"source":"ipcamera","attribute":"camera_frame","sink":"pushnotifier","hourFrom":"08","minFrom":"00","hourTill":"17","minTill":"00"}],
+    "elements": [
+      {
+        "name": "IPCamera",
+        "type": "IPCamera"
+      },
+      {
+        "name": "TimeController",
+        "type": "TimeController",
+        "config": {
+          "starttime": "08:00",
+          "endtime": "17:00"
+        }
+      },
+      {
+        "name": "Tap",
+        "type": "Tap"
+      },
+      {
+        "name": "PushNotifier",
+        "type": "PushNotifier"
+      },
+      {
+        "name": "App",
+        "type": "untrusted"
+      }
+    ],
+    "connections":[
+      {
+        "from": "IPCamera",
+        "outport": "CameraFramePort",
+        "to": "App",
+        "inport": "CameraFramePort",
+        "mode": "simplex"
+      },
+      {
+        "from": "App",
+        "outport": "TapInPort",
+        "to": "Tap",
+        "inport": "TapInPort",
+        "mode": "simplex"
+      },
+      {
+        "from": "TimeController",
+        "outport": "ControlSignalPort",
+        "to": "Tap",
+        "inport": "TapConditionPort",
+        "mode": "simplex"
+      },
+      {
+        "from": "Tap",
+        "outport": "TapOutPort",
+        "to": "PushNotifier",
+        "inport": "SendPushWithImagePort",
+        "mode": "simplex"
+      }
+    ],
+    "model": "%%---------------------------------------------------------\n% SmartCamera App Model\n%%---------------------------------------------------------\n\n%%---------------------------------------------------------\n% App elements\n%%---------------------------------------------------------\n\nelement(ipcamera).\nelement(aesencryption).\nelement(timecontroller).\nelement(tap).\nelement(httprequest).\nelement(untrusted).\n\n%%---------------------------------------------------------\n% Element instances\n%%---------------------------------------------------------\n\nei(e1,ipcamera).\nei(e2,aesencryption).\nei(e3,timecontroller).\nei(e4,tap).\nei(e5,httprequest).\nei(e6,untrusted).\n\n%%---------------------------------------------------------\n% Untrusted element\n%%---------------------------------------------------------\n\nuntrusted(e6).\n\n%%---------------------------------------------------------\n% App connections\n%%---------------------------------------------------------\n\nconnection(e1,cameraframeport,e2,encryptdatainport,simplex).\nconnection(e2,encryptdataoutport,e6,encryptdataoutport,simplex).\nconnection(e6,tapinport,e4,tapinport,duplex).\nconnection(e6,gettapstateport,e4,gettapstateport,duplex).\nconnection(e4,tapoutport,e5,httppostport,duplex).\nconnection(e3,controlsignalport,e4,tapconditionport,simplex).\n\n%%---------------------------------------------------------\n% App configs\n%%---------------------------------------------------------\n\nconfig(10,starthour,timecontroller).\nconfig(00,startminute,timecontroller).\nconfig(18,endhour,timecontroller).\nconfig(00,endminute,timecontroller).\nconfig('146.193.41.162/intrusion',hostname,httprequest).\n\n%%---------------------------------------------------------\n% Attributes\n%%---------------------------------------------------------\n\nattribute(camera_frame,ipcamera).\nattribute(encrypted_data,aesencryption).\nattribute(time_control_signal,timecontroller).\nattribute(tap_state,tap).\nattribute(data_from_internet,httprequest).\n\n%%---------------------------------------------------------\n% Attribute types\n%%---------------------------------------------------------\n\nattrtype(camera_frame,image).\nattrtype(encrypted_data,encrypteddata).\nattrtype(time_control_signal,boolean).\nattrtype(tap_state,boolean).\nattrtype(data_from_internet,externaldata).\n\n%%---------------------------------------------------------\n% Supported attribute types for a given element's port\n% portdatatype([INTYPES],[OUTTYPES],PORT,ELEMENT)\n%%---------------------------------------------------------\n\nportdatatype([],[image],getframeport,ipcamera).\nportdatatype([],[image],cameraframeport,ipcamera).\nportdatatype(any,[],encryptdatainport,aesencryption).\nportdatatype([],[encrypteddata],encryptdataoutport,aesencryption).\nportdatatype([],[boolean],controlsignalport,timecontroller).\nportdatatype([boolean],[],tapconditionport,tap).\nportdatatype(any,any,tapinport,tap). % can be duplex\nportdatatype(any,any,tapoutport,tap).% can be duplex\nportdatatype(any,any,httppostport,httprequest).\nportdatatype(any,any,httpgetport,httprequest).\nportdatatype(any,any,httpputport,httprequest).\nportdatatype(any,any,httpdeleteport,httprequest).\nportdatatype(any,any,_,untrusted).\n\n%%---------------------------------------------------------\n% Elements' ports that stop attribute propagation\n%%---------------------------------------------------------\n\nstopport(controlsignalport,timecontroller).\nstopport(tapconditionport,tap).\n\n%%---------------------------------------------------------\n% Elements' output rules\n%%---------------------------------------------------------\n\noutput(X,cameraframeport,Attr,Value,Trans,Time) :-\n\tei(X,ipcamera),\n\tAttr = [camera_frame],\n\tValue = [cameraframe],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,getframeport,Attr,Value,Trans,Time) :-\n\tei(X,ipcamera),\n\tAttr = [camera_frame],\n\tValue = [cameraframe],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,encryptdataoutport,Attr,Value,Trans,Time) :-\n\tei(X,aesencryption),\n\tinput(X,encryptdatainport,AttrIn,_,TransIn,Time),\n\taddencryptedprefix(AttrIn,TransOut),\n\tAttr = [encrypted_data],\n\tValue = [],\n\t%append(TransIn, [t(H, encrypted, X)], Trans),  % nuno's ver.\n\tappend(TransIn, TransOut, Trans).\n\n% true signal is only sent when the time is right\noutput(X,controlsignalport,Attr,Value,Trans,Time) :-\n\tei(X,timecontroller),\n\tconfig(StartH,starthour,timecontroller),\n\tconfig(StartM,startminute,timecontroller),\n\tconfig(EndH,endhour,timecontroller),\n\tconfig(EndM,endminute,timecontroller),\n\ttimeok(StartH,StartM,EndH,EndM),\n\tAttr = [time_control_signal],\n\tValue = [true],\n\tTrans = [],\n\tTime is 0.\n\n% false signal is sent otherwise\noutput(X,controlsignalport,Attr,Value,Trans,Time) :-\n\tei(X,timecontroller),\n\tconfig(StartH,starthour,timecontroller),\n\tconfig(StartM,startminute,timecontroller),\n\tconfig(EndH,endhour,timecontroller),\n\tconfig(EndM,endminute,timecontroller),\n\tnot(timeok(StartH,StartM,EndH,EndM)),\n\tAttr = [time_control_signal],\n\tValue = [false],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,tapoutport,Attr,Value,Trans,Time) :-\n\tei(X,tap),\n\tinput(X,tapconditionport,_,ValueCond,_,TimeInCond),\n\tmember(true,ValueCond),\n\tinput(X,tapinport,Attr,Value,Trans,TimeIn),\n\tTime is max(TimeIn,TimeInCond).\n\noutput(X,tapinport,Attr,Value,Trans,Time) :-\n\tei(X,tap),\n\tinput(X,tapconditionport,_,ValueCond,_,_),\n\tmember(true,ValueCond),\n\tinput(X,tapoutport,Attr,Value,Trans,Time).\n\noutput(X,gettapstateport,Attr,Value,Trans,Time) :-\n\tei(X,tap),\n\tAttr = [tap_state],\n\tValue = [true],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,gettapstateport,Attr,Value,Trans,Time) :-\n\tei(X,tap),\n\tAttr = [tap_state],\n\tValue = [false],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,httpgetport,Attr,Value,Trans,Time) :-\n\tei(X,httprequest),\n\tAttr = [data_from_internet],\n\tValue = [],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,httppostport,Attr,Value,Trans,Time) :-\n\tei(X,httprequest),\n\tAttr = [data_from_internet],\n\tValue = [],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,httpputport,Attr,Value,Trans,Time) :-\n\tei(X,httprequest),\n\tAttr = [data_from_internet],\n\tValue = [],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,httpdeleteport,Attr,Value,Trans,Time) :-\n\tei(X,httprequest),\n\tAttr = [data_from_internet],\n\tValue = [],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,_,Attr,Value,Trans,Time):-\n\tei(X,untrusted),\n\tuntrusted(X),\n\tallattr(X,Attr),\n\tallvalues(X,Value),\n\talltransforms(X,Trans),\n\talltimes(X,Time).\n\n\n%----------------------------------------------------------\n%% Helper rules for the elements' output\n%----------------------------------------------------------\n\n% Helper rules for the aesencryption element\n\naddencryptedprefix([],[]).\n\naddencryptedprefix([H|T],[NewAttr|Rest]) :-\n\tatom_concat('encrypted_',H,NewAttr),\n\taddencryptedprefix(T,Rest).\n% Helper rules for the timecontroller element\ncurrenttime(Year,Month,Day,Hour,Minute,Second,Off,TZ,DST) :-\n\tget_time(Stamp),\n\tstamp_date_time(Stamp, DateTime, local),\n\tdate_time_value(year, DateTime, Year),\n\tdate_time_value(month, DateTime, Month),\n\tdate_time_value(day, DateTime, Day),\n\tdate_time_value(hour, DateTime, Hour),\n\tdate_time_value(minute, DateTime, Minute),\n\tdate_time_value(second, DateTime, Second),\n\tdate_time_value(utc_offset, DateTime, Off),\n\tdate_time_value(time_zone, DateTime, TZ),\n\tdate_time_value(daylight_saving, DateTime, DST).\n\ncreatestamp(Hour,Minute,Stamp) :-\n\tcurrenttime(Year,Month,Day,_,_,_,Off,TZ,DST),\n\tdate_time_stamp(date(Year,Month,Day,Hour,Minute,0,Off,TZ,DST), Stamp).\n\nisWithinRange(Start,End) :-\n\t%get_time(Stamp),\t% system function\n\tgettime(Stamp),\t\t% custom function\n\tStamp < End,\n\tStamp > Start.\n\n:- dynamic gettime/1.\n\ngettime(X) :-\n\tget_time(X).\n\n% start time comes before end time\ntimeok(StartH,StartM,EndH,EndM) :-\n\tcreatestamp(StartH,StartM,StampFrom),\n\tcreatestamp(EndH,EndM,StampTill),\n\tStampFrom < StampTill,\n\tisWithinRange(StampFrom,StampTill).\n\n% start time comes after end time\ntimeok(StartH,StartM,EndH,EndM) :-\n\tcreatestamp(StartH,StartM,StampFrom),\n\tcreatestamp(EndH,EndM,StampTill),\n\tStampFrom > StampTill,\n\tisWithinRange(StampTill,StampFrom).\n% Helper rules for the untrusted element\nallattr(ElInstance, Result) :-\n\tfindall(Attr, input(ElInstance,_,Attr,_,_,_),L),\n\tappend(L, W),\n\tsort(W,Result).\n\nallvalues(ElInstance, Result) :-\n\tfindall(Value, input(ElInstance,_,_,Value,_,_),L),\n\tappend(L, W),\n\tsort(W,Result).\n\nalltransforms(ElInstance, Result) :-\n\tfindall(Trans, input(ElInstance,_,_,_,Trans,_),L),\n\tappend(L, W),\n\tsort(W,Result).\n\nalltimes(ElInstance, Final) :-\n\tfindall(Time, input(ElInstance,_,_,_,_,Time),Times),\n\tfindmax(Times,Final).\n\n\naccMax([H|T],Acc,Max) :-\n\tH > Acc,\n\taccMax(T,H,Max).\n\naccMax([H|T],Acc,Max) :-\n\tH =< Acc,\n\taccMax(T,Acc,Max).\n\naccMax([],Acc,Acc).\n\nfindmax(List,Max) :-\n\tList = [H|_],\n\taccMax(List,H,Max).\n"
+  },
+  {
+    "id": 2,
+    "name": "LightMyPath",
+    "description": "An app detects the motion and turns on the lights automatically. After 30 sec of no motion it will turn the lights off",
+    "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MyIgaGVpZ2h0PSI3NCIgdmlld0JveD0iMCAwIDczIDc0Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMDBhNTUxO308L3N0eWxlPjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjI3IC00MDIpIj48cmVjdCB3aWR0aD0iNzMiIGhlaWdodD0iMiIgcng9IjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIyNyA0NzQpIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjQwIDQwMikiPjxwYXRoIGQ9Ik03LjI2Nyw0MS4yMjFBMTYuNTMzLDE2LjUzMywwLDAsMSwxMC4zLDQ0Ljg4N2MxLjA2NCwxLjg0NywxLjIzOCw4LjMxOCwxLjEsMTEuOTYxYTEuMjY1LDEuMjY1LDAsMCwwLDEuMjYyLDEuMzE0djMuNzkzaC0uMDcxYTEuMjY1LDEuMjY1LDAsMCwwLC4wNzEsMi41Mjh2Mi41MjhoLS4wNzFhMS4yNjUsMS4yNjUsMCwwLDAsLjA3MSwyLjUyOHYyLjUyOGMwLC41OCwyMi43NTYuNTgsMjIuNzU2LDBWNjguMjc1aC4wNzFhMS4yNjQsMS4yNjQsMCwwLDAtLjA3MS0yLjUxNlY2My4yMThoLjA3MWExLjI1OSwxLjI1OSwwLDAsMC0uMDcxLTIuNTE2VjU4LjE2MWExLjI2NCwxLjI2NCwwLDAsMCwxLjI2NC0xLjMxNGMtLjE0MS0zLjY0Mi4wMy0xMC4xMTQsMS4xLTExLjk2MWExNi41MywxNi41MywwLDAsMSwzLjAzNC0zLjY2NmwuMjE1LS4yMTVhMjQuMDIxLDI0LjAyMSwwLDEsMC0zMy45NywwWm0yNS42MiwyOS44NmgtMTcuN1Y2OS40bDE3LjctLjk4M1ptMC01LjItMTcuNy45ODNWNjQuMzRsMTcuNy0uOTgzWm0wLTUuMDU3LTE3LjcuOTgzdi0zLjY1aDE3LjdabS04Ljg1LTIwLjM2NmEyLjUyOCwyLjUyOCwwLDEsMSwyLjUyOC0yLjUyOEEyLjUyOCwyLjUyOCwwLDAsMSwyNC4wMzgsNDAuNDYyWk04Ljg0LDguODI5QTIxLjQ5MiwyMS40OTIsMCwwLDEsMzkuMjM1LDM5LjIyNGwtLjIxMi4yMTJhMTguNzQyLDE4Ljc0MiwwLDAsMC0zLjQzOCw0LjE4NmMtMS40NSwyLjUxNy0xLjUxNyw5LjEtMS40NjYsMTIuMDFIMjUuM1Y0Mi44MTFhNS4wNTcsNS4wNTcsMCwxLDAtMi41MjgsMFY1NS42MzNIMTMuOTU2Yy4wNDgtMi45MDgtLjAxNi05LjQ5NC0xLjQ2Ni0xMi4wMWExOC43NDIsMTguNzQyLDAsMCwwLTMuNDM4LTQuMTg2bC0uMjEyLS4yMTJBMjEuNDkyLDIxLjQ5MiwwLDAsMSw4Ljg0LDguODI5Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjAyIDApIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xMDcuMjQ3LDE2OC4wMzlhMTEuMywxMS4zLDAsMCwwLTguMDQ1LDMuMzMzLDEuMjY0LDEuMjY0LDAsMCwwLDEuNzg3LDEuNzg4LDguODUxLDguODUxLDAsMCwxLDEyLjUxNiwwLDEuMjY0LDEuMjY0LDAsMCwwLDEuNzg4LTEuNzg4QTExLjMwNywxMS4zMDcsMCwwLDAsMTA3LjI0NywxNjguMDM5Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04My4yMjkgLTE0MS40ODQpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik03MC45MTQsMTMzLjI1NWExLjI2NCwxLjI2NCwwLDAsMCwxLjc4OCwxLjc4OCwxNS4xODcsMTUuMTg3LDAsMCwxLDIxLjQ1NCwwLDEuMjY1LDEuMjY1LDAsMCwwLDEuNzktMS43ODhBMTcuNzE2LDE3LjcxNiwwLDAsMCw3MC45MTQsMTMzLjI1NVptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTkuNDEyIC0xMDcuODM3KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNzQuODE1LDk2LjkyNEExLjI2NCwxLjI2NCwwLDAsMCw3Ni42LDk1LjEzNmEyNC4wNDksMjQuMDQ5LDAsMCwwLTMzLjk3LDAsMS4yNjQsMS4yNjQsMCwwLDAsMS43ODgsMS43ODhBMjEuNTE4LDIxLjUxOCwwLDAsMSw3NC44MTUsOTYuOTI0Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zNS42IC03NC4xODgpIi8+PC9nPjwvZz48L3N2Zz4=",
+    "devices": ["MotionSensor","SmartLight"],
+    "notifications": [],
+    "internetAccess": {
+      "access": false,
+      "url": ""
+    },
+    "flows": [{"source":"motionsensor","attribute":"motion_detected","sink":"smartlight","hourFrom":"_","minFrom":"_","hourTill":"_","minTill":"_"}],
+    "elements": [
+      {
+        "name": "MotionSensor",
+        "type": "MotionSensor"
+      },
+      {
+        "name": "SmartLight",
+        "type": "SmartLight"
+      },
+      {
+        "name": "Timer",
+        "type": "Timer",
+        "config": {
+          "time": 30000
+        }
+      },
+      {
+        "name": "App",
+        "type": "untrusted"
+      }
+    ],
+    "connections":[
+      {
+        "from": "MotionSensor",
+        "outport": "MotionDetectedPort",
+        "to": "App",
+        "inport": "MotionDetectedPort",
+        "mode": "simplex"
+      },
+      {
+        "from": "MotionSensor",
+        "outport": "MotionDetectedPort",
+        "to": "Timer",
+        "inport": "StartTimerPort",
+        "mode": "simplex"
+      },
+      {
+        "from": "App",
+        "outport": "TurnOnLightPort",
+        "to": "SmartLight",
+        "inport": "TurnOnLightPort",
+        "mode": "simplex"
+      },
+      {
+        "from": "App",
+        "outport": "TurnOffLightPort",
+        "to": "SmartLight",
+        "inport": "TurnOffLightPort",
+        "mode": "simplex"
+      },
+      {
+        "from": "App",
+        "outport": "GetLightStatePort",
+        "to": "SmartLight",
+        "inport": "GetLightStatePort",
+        "mode": "duplex"
+      },
+      {
+        "from": "Timer",
+        "outport": "TimerExpiredPort",
+        "to": "App",
+        "inport": "TimerExpiredPort",
+        "mode": "simplex"
+      }
+    ],
+    "model": "%%---------------------------------------------------------\n% LightMyPath App Model\n%%---------------------------------------------------------\n\n%%---------------------------------------------------------\n% App elements\n%%---------------------------------------------------------\n\nelement(motionsensor).\nelement(smartlight).\nelement(timer).\nelement(untrusted).\n\n%%---------------------------------------------------------\n% Element instances\n%%---------------------------------------------------------\n\nei(e1,motionsensor).\nei(e2,smartlight).\nei(e3,timer).\nei(e4,untrusted).\n\n%%---------------------------------------------------------\n% Untrusted element\n%%---------------------------------------------------------\n\nuntrusted(e4).\n\n%%---------------------------------------------------------\n% App connections\n%%---------------------------------------------------------\n\nconnection(e1,motiondetectedport,e4,motiondetectedport,simplex).\nconnection(e1,motiondetectedport,e3,starttimerport,simplex).\nconnection(e4,turnonlightport,e2,turnonlightport,simplex).\nconnection(e4,turnofflightport,e2,turnofflightport,simplex).\nconnection(e4,getlightstateport,e2,getlightstateport,duplex).\nconnection(e3,timerexpiredport,e4,timerexpiredport,simplex).\n\n%%---------------------------------------------------------\n% App configs\n%%---------------------------------------------------------\n\nconfig(30000,time,timer).\n\n%%---------------------------------------------------------\n% Attributes\n%%---------------------------------------------------------\n\nattribute(motion_detected,motionsensor).\nattribute(light_state,smartlight).\nattribute(timer_expired,timer).\n\n%%---------------------------------------------------------\n% Attribute types\n%%---------------------------------------------------------\n\nattrtype(motion_detected,boolean).\nattrtype(light_state,boolean).\nattrtype(timer_expired,boolean).\n\n%%---------------------------------------------------------\n% Supported attribute types for a given element's port\n% portdatatype([INTYPES],[OUTTYPES],PORT,ELEMENT)\n%%---------------------------------------------------------\n\nportdatatype([],[boolean],motiondetectedport,motionsensor).\nportdatatype([],[],turnonlightport,smartlight).\nportdatatype([],[],turnofflightport,smartlight).\nportdatatype([],[boolean],getlightstateport,smartlight).\nportdatatype([boolean],[],starttimerport,timer).\nportdatatype([boolean],[],starttimeronceport,timer).\nportdatatype([boolean],[],stoptimerport,timer).\nportdatatype([],[boolean],timerexpiredport,timer).\nportdatatype(any,any,_,untrusted).\n\n%%---------------------------------------------------------\n% Elements' ports that stop attribute propagation\n%%---------------------------------------------------------\n\nstopport(turnonlightport,smartlight).\nstopport(turnofflightport,smartlight).\nstopport(stoptimerport,timer).\n\n%%---------------------------------------------------------\n% Elements' output rules\n%%---------------------------------------------------------\n\noutput(X,motiondetectedport,Attr,Value,Trans,Time) :-\n\tei(X,motionsensor),\n\tAttr = [motion_detected],\n\tValue=[true],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,motiondetectedport,Attr,Value,Trans,Time) :-\n\tei(X,motionsensor),\n\tAttr = [motion_detected],\n\tValue=[false],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,getlightstateport,Attr,Value,Trans,Time) :-\n\tei(X,smartlight),\n\tAttr = [light_state],\n\tValue = [true],\n\tTrans = [],\n\tTime = 0.\n\noutput(X,getlightstateport,Attr,Value,Trans,Time) :-\n\tei(X,smartlight),\n\tAttr = [light_state],\n\tValue = [false],\n\tTrans = [],\n\tTime = 0.\n\noutput(X,timerexpiredport,Attr,Value,Trans,Time) :-\n\tei(X,timer),\n\tconfig(Timeout,time,timer),\n\tinput(X,settimerport,_,_,Trans,TimeIn),\n\tAttr = [timer_expired],\n\tValue = [true],\n\tTime is TimeIn + Timeout.\n\noutput(X,timerexpiredport,Attr,Value,Trans,Time) :-\n\tei(X,timer),\n\tconfig(Timeout,time,timer),\n\tinput(X,starttimerport,_,_,Trans,TimeIn),\n\tAttr = [timer_expired],\n\tValue = [true],\n\tTime is TimeIn + Timeout.\n\noutput(X,timerexpiredport,Attr,Value,Trans,Time) :-\n\tei(X,timer),\n\tconfig(Timeout,time,timer),\n\tinput(X,starttimeronceport,_,_,Trans,TimeIn),\n\tAttr = [timer_expired],\n\tValue = [true],\n\tTime is TimeIn + Timeout.\n\noutput(X,_,Attr,Value,Trans,Time):-\n\tei(X,untrusted),\n\tuntrusted(X),\n\tallattr(X,Attr),\n\tallvalues(X,Value),\n\talltransforms(X,Trans),\n\talltimes(X,Time).\n\n\n%----------------------------------------------------------\n%% Helper rules for the elements' output\n%----------------------------------------------------------\n\n% Helper rules for the untrusted element\nallattr(ElInstance, Result) :-\n\tfindall(Attr, input(ElInstance,_,Attr,_,_,_),L),\n\tappend(L, W),\n\tsort(W,Result).\n\nallvalues(ElInstance, Result) :-\n\tfindall(Value, input(ElInstance,_,_,Value,_,_),L),\n\tappend(L, W),\n\tsort(W,Result).\n\nalltransforms(ElInstance, Result) :-\n\tfindall(Trans, input(ElInstance,_,_,_,Trans,_),L),\n\tappend(L, W),\n\tsort(W,Result).\n\nalltimes(ElInstance, Final) :-\n\tfindall(Time, input(ElInstance,_,_,_,_,Time),Times),\n\tfindmax(Times,Final).\n\n\naccMax([H|T],Acc,Max) :-\n\tH > Acc,\n\taccMax(T,H,Max).\n\naccMax([H|T],Acc,Max) :-\n\tH =< Acc,\n\taccMax(T,Acc,Max).\n\naccMax([],Acc,Acc).\n\nfindmax(List,Max) :-\n\tList = [H|_],\n\taccMax(List,H,Max).\n"
+  },
+  {
+    "id": 3,
+    "name": "SmartSecurity",
+    "description": "When motion or contact sensor detect something the app will notify your security company and sound an alarm",
+    "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MyIgaGVpZ2h0PSI3NiIgdmlld0JveD0iMCAwIDczIDc2Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMDBhNTUxO308L3N0eWxlPjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjI4IC0xNjgpIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNDAgMTY4KSI+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xMjAuMTIsODAuODlhMS4yNjQsMS4yNjQsMCwwLDAsLjg4NSwyLjM2OCw5LjkyMiw5LjkyMiwwLDAsMSw2Ljk3NiwwLDEuMjY0LDEuMjY0LDAsMCwwLC44ODUtMi4zNjhBMTIuNDYsMTIuNDYsMCwwLDAsMTIwLjEyLDgwLjg5Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDAuNDc1IC02Ny40NCkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTExMi40MzMsNDQuNTIyYTEuMjY1LDEuMjY1LDAsMCwwLC41ODMtMi4zODYsMTcuNywxNy43LDAsMCwwLTE2LjI4NCwwQTEuMjY0LDEuMjY0LDAsMSwwLDk3LjksNDQuMzhhMTUuMTcsMTUuMTcsMCwwLDEsMTMuOTU3LDBBMS4yNjcsMS4yNjcsMCwwLDAsMTEyLjQzMyw0NC41MjJabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTgwLjg1MyAtMzMuODA3KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNzUuNjQ5LDUuNDYzYTIwLjA5LDIwLjA5LDAsMCwxLDIwLjkxMywwQTEuMjY0LDEuMjY0LDAsMCwwLDk3Ljg3NCwzLjNhMjIuNjEzLDIyLjYxMywwLDAsMC0yMy41MzcsMCwxLjI2NCwxLjI2NCwwLDEsMCwxLjMxMiwyLjE2MlptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjIuMDg1IDApIi8+PHBhdGggZD0iTTQzLjAzNSwxNDIuODYydi0zLjc5M2ExOC45NjQsMTguOTY0LDAsMCwwLTM3LjkyNywwdjMuNzkzYTUuMDU3LDUuMDU3LDAsMCwwLTUuMDU3LDUuMDU3djI0LjAyMUE1LjA1Nyw1LjA1NywwLDAsMCw1LjEwOCwxNzdINDMuMDM1YTUuMDU3LDUuMDU3LDAsMCwwLDUuMDU3LTUuMDU3VjE0Ny45MTlBNS4wNTYsNS4wNTYsMCwwLDAsNDMuMDM1LDE0Mi44NjJabS0zNS40LTMuNzkzYTE2LjQzNSwxNi40MzUsMCwwLDEsMzIuODcsMHYzLjc5M0gzNi43MTR2LTMuNzkzYTEyLjY0MiwxMi42NDIsMCwwLDAtMjUuMjg1LDB2My43OTNINy42MzZabTI2LjU0OSwzLjc5M0gxMy45NTd2LTMuNzkzYTEwLjExNCwxMC4xMTQsMCwwLDEsMjAuMjI4LDBabTExLjM3OCwyOS4wNzhhMi41MjgsMi41MjgsMCwwLDEtMi41MjgsMi41MjhINS4xMDhhMi41MjksMi41MjksMCwwLDEtMi41MjgtMi41MjhWMTQ3LjkxOWEyLjUyOSwyLjUyOSwwLDAsMSwyLjUyOC0yLjUyOEg0My4wMzVhMi41MjgsMi41MjgsMCwwLDEsMi41MjgsMi41MjhabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTAuMDUxIC0xMDEuMTI1KSIvPjxwYXRoIGQ9Ik0xMjIuMTY0LDMyNS41NzVoLTcuNTg1YTEuMjY1LDEuMjY1LDAsMCwxLTEuMjUzLTEuNDNsMS4xNjEtOC43NTlhNi4zMjEsNi4zMjEsMCwxLDEsNy43NywwbDEuMTYxLDguNzU5YTEuMjY1LDEuMjY1LDAsMCwxLTEuMjUzLDEuNDNabS02LjE0Mi0yLjUyOGg0LjdsLTEuMDc0LTguMWExLjI2NCwxLjI2NCwwLDAsMSwuNjIyLTEuMjY0LDMuNzkyLDMuNzkyLDAsMSwwLTMuNzkzLDAsMS4yNjQsMS4yNjQsMCwwLDEsLjYyMiwxLjI2NFptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOTQuMzUgLTI1Ni4wMjUpIi8+PC9nPjxyZWN0IHdpZHRoPSI3MyIgaGVpZ2h0PSIyIiByeD0iMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjI4IDI0MikiLz48L2c+PC9zdmc+",
+    "privacy concern": "An app has access to camera and HTTP Request modules. We need to control what it can do",
+    "devices": ["MotionSensor","ContactSensor","Alarm"],
+    "notifications": [],
+    "internetAccess": {
+      "access": true,
+      "url": "https://total-security.com/api/intrusion"
+    },
+    "flows": [{"source":"motionsensor","attribute":"motion_detected","sink":"httprequest","hourFrom":"_","minFrom":"_","hourTill":"_","minTill":"_"},{"source":"contactsensor","attribute":"contact_open","sink":"httprequest","hourFrom":"_","minFrom":"_","hourTill":"_","minTill":"_"}],
+    "elements": [
+      {
+        "name": "MotionSensor",
+        "type": "MotionSensor"
+      },
+      {
+        "name": "ContactSensor",
+        "type": "ContactSensor"
+      },
+      {
+        "name": "OR",
+        "type": "OR"
+      },
+      {
+        "name": "App",
+        "type": "untrusted"
+      },
+      {
+        "name": "Alarm",
+        "type": "Alarm"
+      },
+      {
+        "name": "HttpRequest",
+        "type": "HttpRequest",
+        "config": {
+          "hostname": "146.193.41.162",
+          "path": "/intrusion"
+        }
+      }
+    ],
+    "connections":[
+      {
+        "from": "MotionSensor",
+        "outport": "MotionDetectedPort",
+        "to": "OR",
+        "inport": "ORIn1Port",
+        "mode": "simplex"
+      },
+      {
+        "from": "ContactSensor",
+        "outport": "ContactOpenPort",
+        "to": "OR",
+        "inport": "ORIn2Port",
+        "mode": "simplex"
+      },
+      {
+        "from": "OR",
+        "outport": "OROutPort",
+        "to": "App",
+        "inport": "OROutPort",
+        "mode": "simplex"
+      },
+      {
+        "from": "OR",
+        "outport": "OROutPort",
+        "to": "Timer",
+        "inport": "StartTimerOncePort",
+        "mode": "simplex"
+      },
+      {
+        "from": "IPCamera",
+        "outport": "CameraFramePort",
+        "to": "App",
+        "inport": "CameraFramePort",
+        "mode": "simplex"
+      },
+      {
+        "from": "App",
+        "outport": "GetFramePort",
+        "to": "IPCamera",
+        "inport": "GetFramePort",
+        "mode": "duplex"
+      },
+      {
+        "from": "App",
+        "outport": "TriggerAlarmPort",
+        "to": "Alarm",
+        "inport": "TriggerAlarmPort",
+        "mode": "simplex"
+      },
+      {
+        "from": "App",
+        "outport": "SendPushWithImagePort",
+        "to": "PushNotifier",
+        "inport": "SendPushWithImagePort",
+        "mode": "simplex"
+      },
+      {
+        "from": "App",
+        "outport": "TapInPort",
+        "to": "Tap",
+        "inport": "TapInPort",
+        "mode": "duplex"
+      },
+      {
+        "from": "App",
+        "outport": "GetTapStatePort",
+        "to": "Tap",
+        "inport": "GetTapStatePort",
+        "mode": "duplex"
+      },
+      {
+        "from": "PushNotifier",
+        "outport": "DismissReceivedPort",
+        "to": "NOT",
+        "inport": "NOTInPort",
+        "mode": "simplex"
+      },
+      {
+        "from": "PushNotifier",
+        "outport": "DismissReceivedPort",
+        "to": "Timer",
+        "inport": "StopTimerPort",
+        "mode": "simplex"
+      },
+      {
+        "from": "Timer",
+        "outport": "TimerExpiredPort",
+        "to": "Tap",
+        "inport": "TapConditionPort",
+        "mode": "simplex"
+      },
+      {
+        "from": "Tap",
+        "outport": "TapOutPort",
+        "to": "HttpRequest",
+        "inport": "HttpPostPort",
+        "mode": "duplex"
+      },
+      {
+        "from": "NOT",
+        "outport": "NOTOutPort",
+        "to": "Tap",
+        "inport": "TapConditionPort",
+        "mode": "simplex"
+      }
+    ],
+    "model": "%%---------------------------------------------------------\n% SmartSecurity App Model\n%%---------------------------------------------------------\n\n%%---------------------------------------------------------\n% App elements\n%%---------------------------------------------------------\n\nelement(motionsensor).\nelement(contactsensor).\nelement(or).\nelement(pushnotifier).\nelement(ipcamera).\nelement(untrusted).\nelement(alarm).\nelement(timer).\nelement(tap).\nelement(not).\nelement(httprequest).\n\n%%---------------------------------------------------------\n% Element instances\n%%---------------------------------------------------------\n\nei(e1,motionsensor).\nei(e2,contactsensor).\nei(e3,or).\nei(e4,pushnotifier).\nei(e5,ipcamera).\nei(e6,untrusted).\nei(e7,alarm).\nei(e8,timer).\nei(e9,tap).\nei(e10,not).\nei(e11,httprequest).\n\n%%---------------------------------------------------------\n% Untrusted element\n%%---------------------------------------------------------\n\nuntrusted(e6).\n\n%%---------------------------------------------------------\n% App connections\n%%---------------------------------------------------------\n\nconnection(e1,motiondetectedport,e3,orin1port,simplex).\nconnection(e2,contactopenport,e3,orin2port,simplex).\nconnection(e3,oroutport,e6,oroutport,simplex).\nconnection(e3,oroutport,e8,starttimeronceport,simplex).\nconnection(e5,cameraframeport,e6,cameraframeport,simplex).\nconnection(e6,getframeport,e5,getframeport,duplex).\nconnection(e6,triggeralarmport,e7,triggeralarmport,simplex).\nconnection(e6,sendpushwithimageport,e4,sendpushwithimageport,simplex).\nconnection(e6,tapinport,e9,tapinport,duplex).\nconnection(e6,gettapstateport,e9,gettapstateport,duplex).\nconnection(e4,dismissreceivedport,e10,notinport,simplex).\nconnection(e4,dismissreceivedport,e8,stoptimerport,simplex).\nconnection(e8,timerexpiredport,e9,tapconditionport,simplex).\nconnection(e9,tapoutport,e11,httppostport,duplex).\nconnection(e10,notoutport,e9,tapconditionport,simplex).\n\n%%---------------------------------------------------------\n% App configs\n%%---------------------------------------------------------\n\nconfig(10000,time,timer).\nconfig('146.193.41.162/intrusion',hostname,httprequest).\n\n%%---------------------------------------------------------\n% Attributes\n%%---------------------------------------------------------\n\nattribute(motion_detected,motionsensor).\nattribute(contact_open,contactsensor).\nattribute(contact_closed,contactsensor).\nattribute(dismiss_received,pushnotifier).\nattribute(camera_frame,ipcamera).\nattribute(timer_expired,timer).\nattribute(tap_state,tap).\nattribute(data_from_internet,httprequest).\n\n%%---------------------------------------------------------\n% Attribute types\n%%---------------------------------------------------------\n\nattrtype(motion_detected,boolean).\nattrtype(contact_open,boolean).\nattrtype(contact_closed,boolean).\nattrtype(dismiss_received,boolean).\nattrtype(camera_frame,image).\nattrtype(timer_expired,boolean).\nattrtype(tap_state,boolean).\nattrtype(data_from_internet,externaldata).\n\n%%---------------------------------------------------------\n% Supported attribute types for a given element's port\n% portdatatype([INTYPES],[OUTTYPES],PORT,ELEMENT)\n%%---------------------------------------------------------\n\nportdatatype([],[boolean],motiondetectedport,motionsensor).\nportdatatype([],[boolean],contactclosedport,contactsensor).\nportdatatype([],[boolean],contactopenport,contactsensor).\nportdatatype([boolean],[],orin1port,or).\nportdatatype([boolean],[],orin2port,or).\nportdatatype([],[boolean],oroutport,or).\nportdatatype([text,image],[],sendpushwithimageport,pushnotifier).\nportdatatype([text],[],sendpushmessageport,pushnotifier).\nportdatatype([],[boolean],dismissreceivedport,pushnotifier).\nportdatatype([],[image],getframeport,ipcamera).\nportdatatype([],[image],cameraframeport,ipcamera).\nportdatatype(any,any,_,untrusted).\nportdatatype([],[],triggeralarmport,alarm).\nportdatatype([boolean],[],starttimerport,timer).\nportdatatype([boolean],[],starttimeronceport,timer).\nportdatatype([boolean],[],stoptimerport,timer).\nportdatatype([],[boolean],timerexpiredport,timer).\nportdatatype([boolean],[],tapconditionport,tap).\nportdatatype(any,any,tapinport,tap). % can be duplex\nportdatatype(any,any,tapoutport,tap).% can be duplex\nportdatatype([boolean],[],notinport,not).\nportdatatype([],[boolean],notoutport,not).\nportdatatype(any,any,httppostport,httprequest).\nportdatatype(any,any,httpgetport,httprequest).\nportdatatype(any,any,httpputport,httprequest).\nportdatatype(any,any,httpdeleteport,httprequest).\n\n%%---------------------------------------------------------\n% Elements' ports that stop attribute propagation\n%%---------------------------------------------------------\n\nstopport(sendpushwithimageport,pushnotifier).\nstopport(sendpushmessageport,pushnotifier).\nstopport(triggeralarmport,alarm).\nstopport(stoptimerport,timer).\nstopport(tapconditionport,tap).\n\n%%---------------------------------------------------------\n% Elements' output rules\n%%---------------------------------------------------------\n\noutput(X,motiondetectedport,Attr,Value,Trans,Time) :-\n\tei(X,motionsensor),\n\tAttr = [motion_detected],\n\tValue=[true],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,motiondetectedport,Attr,Value,Trans,Time) :-\n\tei(X,motionsensor),\n\tAttr = [motion_detected],\n\tValue=[false],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,contactopenport,Attr,Value,Trans,Time) :-\n\tei(X,contactsensor),\n\tAttr = [contact_open],\n\tValue=[true],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,contactopenport,Attr,Value,Trans,Time) :-\n\tei(X,contactsensor),\n\tAttr = [contact_open],\n\tValue=[false],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,contactclosedport,Attr,Value,Trans,Time) :-\n\tei(X,contactsensor),\n\tAttr = [contact_closed],\n\tValue=[true],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,contactclosedport,Attr,Value,Trans,Time) :-\n\tei(X,contactsensor),\n\tAttr = [contact_closed],\n\tValue=[false],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,oroutport,Attr,Value,Trans,Time) :-\n\tei(X,or),\n\tinput(X,orin1port,Attr,ValueIn,Trans,TimeIn),\n\tmember(true,ValueIn),\n\tValue = [true],\n\tTime is TimeIn.\n\noutput(X,oroutport,Attr,Value,Trans,Time) :-\n\tei(X,or),\n\tinput(X,orin2port,Attr,ValueIn,Trans,TimeIn),\n\tmember(true,ValueIn),\n\tValue = [true],\n\tTime is TimeIn.\n\n%output(X,oroutport,Attr,Value,Trans,Time) :-\n%\tei(X,or),\n%\tinput(X,orin1port,Attr1,ValueIn1,Trans1,TimeIn1),\n%\tmember(false,ValueIn1),\n%\tinput(X,orin2port,Attr2,ValueIn2,Trans2,TimeIn2),\n%\tmember(false,ValueIn2),\n%\tValue = [false],\n%\tAttr = [Attr1,Attr2],\n%\tTrans = [Trans1,Trans2],\n%\tTime is max(TimeIn1,TimeIn2).\n\noutput(X,dismissreceivedport,Attr,Value,Trans,Time) :-\n\tei(X,pushnotifier),\n\tAttr = [dismiss_received],\n\tValue = [true],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,cameraframeport,Attr,Value,Trans,Time) :-\n\tei(X,ipcamera),\n\tAttr = [camera_frame],\n\tValue = [cameraframe],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,getframeport,Attr,Value,Trans,Time) :-\n\tei(X,ipcamera),\n\tAttr = [camera_frame],\n\tValue = [cameraframe],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,_,Attr,Value,Trans,Time):-\n\tei(X,untrusted),\n\tuntrusted(X),\n\tallattr(X,Attr),\n\tallvalues(X,Value),\n\talltransforms(X,Trans),\n\talltimes(X,Time).\n\noutput(X,timerexpiredport,Attr,Value,Trans,Time) :-\n\tei(X,timer),\n\tconfig(Timeout,time,timer),\n\tinput(X,settimerport,_,_,Trans,TimeIn),\n\tAttr = [timer_expired],\n\tValue = [true],\n\tTime is TimeIn + Timeout.\n\noutput(X,timerexpiredport,Attr,Value,Trans,Time) :-\n\tei(X,timer),\n\tconfig(Timeout,time,timer),\n\tinput(X,starttimerport,_,_,Trans,TimeIn),\n\tAttr = [timer_expired],\n\tValue = [true],\n\tTime is TimeIn + Timeout.\n\noutput(X,timerexpiredport,Attr,Value,Trans,Time) :-\n\tei(X,timer),\n\tconfig(Timeout,time,timer),\n\tinput(X,starttimeronceport,_,_,Trans,TimeIn),\n\tAttr = [timer_expired],\n\tValue = [true],\n\tTime is TimeIn + Timeout.\n\noutput(X,tapoutport,Attr,Value,Trans,Time) :-\n\tei(X,tap),\n\tinput(X,tapconditionport,_,ValueCond,_,TimeInCond),\n\tmember(true,ValueCond),\n\tinput(X,tapinport,Attr,Value,Trans,TimeIn),\n\tTime is max(TimeIn,TimeInCond).\n\noutput(X,tapinport,Attr,Value,Trans,Time) :-\n\tei(X,tap),\n\tinput(X,tapconditionport,_,ValueCond,_,_),\n\tmember(true,ValueCond),\n\tinput(X,tapoutport,Attr,Value,Trans,Time).\n\noutput(X,gettapstateport,Attr,Value,Trans,Time) :-\n\tei(X,tap),\n\tAttr = [tap_state],\n\tValue = [true],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,gettapstateport,Attr,Value,Trans,Time) :-\n\tei(X,tap),\n\tAttr = [tap_state],\n\tValue = [false],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,notoutport,Attr,Value,Trans,Time) :-\n\tei(X,not),\n\tinput(X,notinport,Attr,ValueIn,Trans,TimeIn),\n\tTime is TimeIn,\n\t% A -> X ; Y means if A is true then X otherwise Y\n\t(member(true,ValueIn) -> Value = [false] ; Value = [true]).\n\noutput(X,httpgetport,Attr,Value,Trans,Time) :-\n\tei(X,httprequest),\n\tAttr = [data_from_internet],\n\tValue = [],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,httppostport,Attr,Value,Trans,Time) :-\n\tei(X,httprequest),\n\tAttr = [data_from_internet],\n\tValue = [],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,httpputport,Attr,Value,Trans,Time) :-\n\tei(X,httprequest),\n\tAttr = [data_from_internet],\n\tValue = [],\n\tTrans = [],\n\tTime is 0.\n\noutput(X,httpdeleteport,Attr,Value,Trans,Time) :-\n\tei(X,httprequest),\n\tAttr = [data_from_internet],\n\tValue = [],\n\tTrans = [],\n\tTime is 0.\n\n\n%----------------------------------------------------------\n%% Helper rules for the elements' output\n%----------------------------------------------------------\n\n% Helper rules for the untrusted element\nallattr(ElInstance, Result) :-\n\tfindall(Attr, input(ElInstance,_,Attr,_,_,_),L),\n\tappend(L, W),\n\tsort(W,Result).\n\nallvalues(ElInstance, Result) :-\n\tfindall(Value, input(ElInstance,_,_,Value,_,_),L),\n\tappend(L, W),\n\tsort(W,Result).\n\nalltransforms(ElInstance, Result) :-\n\tfindall(Trans, input(ElInstance,_,_,_,Trans,_),L),\n\tappend(L, W),\n\tsort(W,Result).\n\nalltimes(ElInstance, Final) :-\n\tfindall(Time, input(ElInstance,_,_,_,_,Time),Times),\n\tfindmax(Times,Final).\n\n\naccMax([H|T],Acc,Max) :-\n\tH > Acc,\n\taccMax(T,H,Max).\n\naccMax([H|T],Acc,Max) :-\n\tH =< Acc,\n\taccMax(T,Acc,Max).\n\naccMax([],Acc,Acc).\n\nfindmax(List,Max) :-\n\tList = [H|_],\n\taccMax(List,H,Max).\n"
+  }
+]
